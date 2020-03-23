@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+    <title>02_직접짜는 반응형 웹_selfEX</title>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!--위 주소에서 min만 빼서 들어가보면 css 코드 확인할 수 있다. 들어가보면 .text-center{}종류들이 정의되어 있는데 위 링크 소스를 통해 사용한 것임 -->
+
+    <style>
+      h1{
+        border:1px solid gray; 
+      }
+      
+      /* row각각에 대해서 id값을 줘도 되긴 하지만 아래가 더 편하고 명확 */
+      .row:nth-of-type(1){
+        background-color: #02CBFB; /* color picker (컨+쉬+c)로 선택, 처음에 깔았음 */
+      }
+      .row:nth-of-type(2){  
+        background-color: #81C1E1
+      }
+      .row:nth-of-type(3){
+        background-color: #AFF3FC
+      }
+      .row:nth-of-type(4){
+        background-color: #02CBFB
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row"> 
+        <div class="col-xs-12">
+          <!--xs, sm, lg 등 어떠한 것들 다 와도 상관없다. 왜냐하면 해당하는 사이즈 이하일 경우 다 떨어져서 100%(12전체) 다 사용하기 때문에-->
+          <h1 class="text-center">12</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8">
+          <h1 class="text-center">8</h1>
+        </div>
+        <div class="col-sm-4">
+          <h1 class="text-center">4</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <h1 class="text-center">4</h1>
+        </div>
+        <div class="col-sm-4">
+          <h1 class="text-center">4</h1>
+        </div>
+        <div class="col-sm-4">
+          <h1 class="text-center">4</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="text-center">12</h1>
+        </div>
+      </div>
+
+        <!--
+        ex)
+        <div class = "col-xs-8 col-sm-6 col-md-4">
+          767px이하에서는 col-xs-8이 적용되어 8/12영역을 차지하는 레이아웃이 만들어지고 768 이상에서는 col-sm-6이 적용되어 가로영역 6/12영역을 차지하는 레이아웃, 992px이상에서는 col-md-4이 적용되어 가료영ㅇ역 4/12영역을 차지한다. -->
+       
+
+    </div>
+
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+   <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

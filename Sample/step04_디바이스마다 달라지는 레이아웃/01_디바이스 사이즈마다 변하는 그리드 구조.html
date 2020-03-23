@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+    <title>01_디바이스 사이즈마다 변하는 그리드 구조</title>
+
+    <!-- col의 값을 여러개 줄 수 있다. -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+
+    <style>
+      div{
+        border:1px solid gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row"> 
+        <!--xs : 모든 사이즈에서 동일한 비율의 레이아웃을 가지려면 -->
+        <!--sm : 테블릿 이하에서는 row들이 떨어지게 만들고, 태블릿 이상에서는 꽉찬 비율을 가지고 싶을 때 -->
+        <!--
+        <div class="col-sm-8">col-sm-8</div><div class="col-sm-4">col-sm-4</div>
+        -->
+
+        <!--아래의 의미 : 태블릿사이즈(sm) 이하는 6대6, 작은모니터사이즈(md) 이상에서는 4대8, 큰 모니터사이즈(lg) 이상에서는 8대4 -->
+        <!--xs을 따로 주지 않으면 무조건 떨어져서 각자 꽉 찬 비율을 준다. xs는 스마트폰에서도 사이즈를 나누고 싶을 때 사용하는 것이다.(사실 스마트폰도 작아서 그 안에서 나누려고 하면 작기 때문에 잘 안 준다) -->
+        <div class="col-sm-6 col-md-4 col-lg-8">col-sm-6 col-md-4 col-lg-8</div>
+        <div class="col-sm-6 col-md-8 col-lg-4">col-sm-6 col-md-8 col-lg-4</div>
+      </div>
+    </div>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

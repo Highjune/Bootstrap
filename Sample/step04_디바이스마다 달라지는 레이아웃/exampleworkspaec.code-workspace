@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "D:\\WebHome\\0310"
+		},
+		{
+			"path": "C:\\Users\\June\\Desktop\\0310추가수정"
+		},
+		{
+			"path": "C:\\Users\\June\\Desktop\\WebHome1\\0313\\css"
+		},
+		{
+			"path": "C:\\Users\\June\\Desktop\\WebHome1\\0313\\images"
+		},
+		{
+			"path": "C:\\Users\\June\\Desktop\\WebHome1\\0313\\js"
+		},
+		{
+			"path": "C:\\Users\\June\\Desktop\\WebHome1\\0313"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "0313"
+	}
+}
